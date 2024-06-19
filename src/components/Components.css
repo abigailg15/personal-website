@@ -1,11 +1,144 @@
-.Home{
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .Top_Title {
-
+    display: flex;
+    flex-direction: row;
+    margin-top:60px;
+    margin-bottom: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
 }
 
 .Hello {
-    
+    font-family:'Montserrat';
+    font-size: 50px;
+    text-align: left;
+    display: flex;
+    font-weight: bold;
 }
+
+.myProfile {
+    display: flex;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 3rem;
+}
+
+.infoBoxes {
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    font-family:'Montserrat';
+}
+
+.leftSide {
+    display:flex;
+    flex-direction: column;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.aboutMe {
+    width: 600px;
+    padding: 20px;
+    border-style: solid;
+    border-width: .5px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+}
+
+.aboutmetext {
+    margin: 0;
+}
+
+.Experience {
+    width: 600px;
+    padding: 20px;
+    border-style: solid;
+    border-width: .5px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+}
+
+.exptext {
+    margin: 20px;
+}
+
+.technicalSkills {
+    width: 400px;
+    padding: 20px;
+    border-style: solid;
+    border-width: .5px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+}
+
+.techtext {
+    margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .Top_Title {
+        flex-direction: column;
+        margin-top:60px;
+        margin-bottom: 60px;
+        margin-left: 150px;
+        margin-right: 150px;
+        align-items: center;
+    }
+
+    .Hello {
+        text-align: center;
+    }
+
+    .myProfile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .infoBoxes {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .rightSide {
+        margin-left: 0;
+    }
+    
+    .aboutMe,
+    .Experience,
+    .technicalSkills {
+        width: auto;
+        margin-right: 0;
+    }
+}
+
+/*.flex-container {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+    align-items: center;
+    border-style: solid;
+    border-color: #E6BA95;
+    background-color: #E6BA95;
+    border-width: .5px;
+    border-radius: 20px;
+    margin-left: 15em;
+    margin-right: 15em;
+}*/
