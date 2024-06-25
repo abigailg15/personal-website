@@ -4,27 +4,47 @@
 .Top_Title {
     display: flex;
     flex-direction: row;
-    margin-top:60px;
-    margin-bottom: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-top:40px;
+    margin-bottom: 20px;
+    margin-left: 8vw;
+    margin-right: 8vw;
     align-items: center;
+}
+
+.Navbar {
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-right: 7vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    align-items: center;
+    background-color: #e0e1dc8d;
+    position: fixed; /* Make it stick/fixed */
+    top: -100px; /* Stay on top */
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.Navbar.active {
+    visibility: visible;
+    top: 0;
+    transition: 0.3s ease;
+}
+
+.emaill {
+    margin-left: 7vw;
+    margin-right: 10px;
 }
 
 .Contacts {
     display: flex;
     flex-direction: row;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 8vw;
+    margin-right: 8vw;
     align-items: center;
-}
-
-.email {
-    margin-right: 10px;
-}
-
-.linkedin {
-    margin-right: 10px;
 }
 
 
@@ -49,6 +69,38 @@
     color: rgb(79, 79, 79);
 }
 
+.email {
+    margin-right: 10px;
+}
+
+.email path {
+    transition: fill 0.3s ease;
+}
+
+.email:hover path{
+    fill: rgb(79, 79, 79);;
+}
+
+.linkedin {
+    margin-right: 10px;
+}
+
+.linkedin path {
+    transition: fill 0.3s ease;
+}
+
+.linkedin:hover path{
+    fill: rgb(79, 79, 79);;
+}
+
+.github path {
+    transition: fill 0.3s ease;
+}
+
+.github:hover path{
+    fill: rgb(79, 79, 79);;
+}
+
 .myProfile {
     display: flex;
     object-fit: cover;
@@ -62,8 +114,8 @@
 .infoBoxes {
     display: flex;
     flex-direction: row;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 8vw;
+    margin-right: 8vw;
     margin-top: 30px;
     font-family:'Montserrat';
 }
@@ -81,8 +133,8 @@
 
 .aboutMe {
     background-color: #B3D1D9;
-    width: 600px;
-    padding: 20px;
+    width: 40vw;
+    padding: 2.5vh;
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
@@ -100,12 +152,13 @@
     margin: 0;
     font-size: 20px;
     font-family: "Source Code Pro";
+    line-height: 1.5;
 }
 
 .Experience {
     background-color: #B3D1D9;
-    width: 600px;
-    padding: 20px;
+    width: 40vw;
+    padding: 2.5vh;
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
@@ -123,6 +176,32 @@
     margin: 0;
     font-size: 20px;
     font-family: "Source Code Pro";
+    line-height: 1.5;
+}
+
+.resume{
+    display: flex;
+    background-color: #FFD6DA;
+    width: 25vw;
+    padding: 2.5vh;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+    align-self: center;
+    justify-content: center;
+}
+
+.resume:hover {
+    width: 30vw;
+    transition: 0.3s ease;
+    background-color: #fabcc2;
 }
 
 .techtitle {
@@ -133,8 +212,8 @@
 
 .technicalSkills {
     background-color: #c8d29d;
-    width: 400px;
-    padding: 20px;
+    width: 30vw;
+    padding: 2.5vh;
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
@@ -146,6 +225,7 @@
     margin: 0;
     font-size: 20px;
     font-family: "Source Code Pro";
+    line-height: 1.5;
 }
 
 .relctitle {
@@ -156,8 +236,8 @@
 
 .relevantCoursework {
     background-color: #c8d29d;
-    width: 400px;
-    padding: 20px;
+    width: 30vw;
+    padding: 2.5vh;
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
@@ -169,13 +249,24 @@
     margin: 0;
     font-size: 20px;
     font-family: "Source Code Pro";
+    line-height: 1.5;
 }
+
+.footer {
+    display: flex;
+    background-color: #dedfda;
+    justify-content: center;
+    padding: .5vw;
+    font-family:'Montserrat';
+}
+
+
 
 @media screen and (max-width: 768px) {
     .Top_Title {
         flex-direction: column;
         margin-top:60px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         margin-left: 150px;
         margin-right: 150px;
         align-items: center;
@@ -210,8 +301,20 @@
     
     .aboutMe,
     .Experience,
-    .technicalSkills, .relevantCoursework {
+    .technicalSkills, .relevantCoursework{
         width: auto;
         margin-right: 0;
+    }
+
+    .resume {
+        width: 60vw;
+        margin-right: 0;
+        transition: 0.3s ease;
+
+    }
+
+    .resume:hover {
+        width: 82.9vw;
+        transition: 0.3s ease;
     }
 }
