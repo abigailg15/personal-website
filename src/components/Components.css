@@ -39,6 +39,14 @@
     margin-right: 10px;
 }
 
+.emaill path {
+    transition: fill 0.3s ease;
+}
+
+.emaill:hover path{
+    fill: rgb(79, 79, 79);;
+}
+
 .Contacts {
     display: flex;
     flex-direction: row;
@@ -140,6 +148,11 @@
     border-radius: 20px;
     margin-bottom: 60px;
     margin-right: 50px;
+    transition: 0.3s ease;
+}
+
+.aboutMe:hover {
+    transition: 0.3s ease;
 }
 
 .aboutmetitle {

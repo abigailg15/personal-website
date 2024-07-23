@@ -165,6 +165,7 @@ function Home() {
                                 <li>Python</li>
                                 <li>HTML/CSS</li>
                                 <li>JavaScript</li>
+                                <li>Dart</li>
                             </ul>
                         <strong>Developer Tools</strong>
                             <ul>
@@ -173,11 +174,12 @@ function Home() {
                                 <li>Docker</li>
                                 <li>Android Studio</li>
                             </ul>
-                        <strong>Software/Libraries</strong>
+                        <strong>Software/Libraries/Frameworks</strong>
                             <ul>
                                 <li>Excel</li>
                                 <li>Power Automate</li>
                                 <li>React.js</li>
+                                <li>Flutter</li>
                                 <li>Microsoft Teams</li>
                                 <li>Asana</li>
                             </ul>
