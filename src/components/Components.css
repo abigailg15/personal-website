@@ -12,6 +12,7 @@
 }
 
 .Navbar {
+    z-index: 1000;
     visibility: hidden;
     display: flex;
     flex-direction: row;
@@ -152,6 +153,7 @@
 }
 
 .aboutMe:hover {
+    transform:scale(1.01);
     transition: 0.3s ease;
 }
 
@@ -177,6 +179,12 @@
     border-radius: 20px;
     margin-bottom: 60px;
     margin-right: 50px;
+    transition:0.3s ease;
+}
+
+.Experience:hover {
+    transform:scale(1.01);
+    transition: 0.3s ease;
 }
 
 .exptitle {
@@ -232,6 +240,12 @@
     border-radius: 20px;
     margin-bottom: 60px;
     margin-right: 50px;
+    transition: 0.3s ease;
+}
+
+.technicalSkills:hover {
+    transform:scale(1.015);
+    transition: 0.3s ease;
 }
 
 .techtext {
@@ -256,6 +270,12 @@
     border-radius: 20px;
     margin-bottom: 60px;
     margin-right: 50px;
+    transition: 0.3s ease;
+}
+
+.relevantCoursework:hover {
+    transform:scale(1.015);
+    transition: 0.3s ease;
 }
 
 .relctext {
