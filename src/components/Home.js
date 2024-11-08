@@ -149,7 +149,7 @@ function Home() {
                 </section>
             </div>
             <div className = "rightSide">
-                    <a href = "https://drive.google.com/file/d/1xHZpRrglpHCl6HKzl8e6ZFb3GHjry8F7/view?usp=sharing" target = "_blank" rel = "noreferrer" className = 
+                    <a href = "https://drive.google.com/file/d/12ZUQdz6QBf_PZ_q7ooLCfnb2b_Q3lVZy/view" target = "_blank" rel = "noreferrer" className = 
                     "resume">
                         <section>
                             <strong className = "view_resume">View my resume!</strong>
