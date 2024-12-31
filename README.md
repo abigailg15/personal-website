@@ -2,6 +2,8 @@
 
 This is my personal website showcasing my experience in and out of the computer science field. It's currently still in development, but feel free to take a look!
 
+Access it at this link: https://abigail-gillham.netlify.app/
+
 <!-- ## Available Scripts
 
 In the project directory, you can run:
