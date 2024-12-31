@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+.Navbar {
+    z-index: 1000;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-right: 7vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    align-items: center;
+    background-color: #e0e1dc8d;
+    position: fixed; /* Make it stick/fixed */
+    top: -100px; /* Stay on top */
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.Navbar.active {
+    visibility: visible;
+    top: 0;
+    transition: 0.3s ease;
+}

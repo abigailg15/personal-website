@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.cityuButton {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(220, 214, 230);
+    padding: 1vh;
+    width:100%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: 'Source Code Pro';
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cityUPic {
+    width: 20%;
+    height: 20%;
+    margin: 1vh;
+    margin-right: 5vh;
+}
+
+.cityUTitle {
+    margin-left: 2vw;
+}
+
+.cityuButton:hover {
+    background-color: rgb(165, 146, 193);
+    transition: 0.3s ease;
+}
+
+.cityuButton:active {
+    transform:scale(.95);
+    transition: 0.3s ease;
+}
+
+.cityUImages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cityUImages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+}
+
+.EVCButton {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(220, 214, 230);
+    padding: 1vh;
+    width:100%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: 'Source Code Pro';
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.EVLogo {
+    width: 15%;
+    height: 15%;
+}
+
+.EVCButton:hover {
+    background-color: rgb(165, 146, 193);
+    transition: 0.3s ease;
+}
+
+.EVCButton:active {
+    transform:scale(.95);
+    transition: 0.3s ease;
+}
+
+.EVCTitle {
+    margin-left: 10vw;
+}
+
+.EVCImages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+    .EVCImages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+}
+
+
+.WCSButton {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(220, 214, 230);
+    padding: 1vh;
+    width:100%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: 'Source Code Pro';
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.WCSLogo {
+    width: 30%;
+    height: 30%;
+    margin-top: 3vh;
+    margin-left: 0.5vw;
+}
+
+.WCSTitle {
+    margin-left: 2vw;
+}
+
+.WCSButton:hover {
+    background-color: rgb(165, 146, 193);
+    transition: 0.3s ease;
+}
+
+.WCSButton:active {
+    transform:scale(.95);
+    transition: 0.3s ease;
+}
+
+.WCSImages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+    .WCSImages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+}
+
+.ICSButton {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(220, 214, 230);
+    padding: 1vh;
+    width:100%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: 'Source Code Pro';
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.ICSLogo {
+    width: 13%;
+    height: 13%;
+    margin-top: 1vh;
+}
+
+.ICSTitle {
+    margin-left: 8vw;
+}
+
+.ICSButton:hover {
+    background-color: rgb(165, 146, 193);
+    transition: 0.3s ease;
+}
+
+.ICSButton:active {
+    transform:scale(.95);
+    transition: 0.3s ease;
+}
+
+.ICSImages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+    .ICSImages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+}
