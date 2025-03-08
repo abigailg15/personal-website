@@ -318,9 +318,8 @@ function Home() {
               Hi, I'm Abby Gillham! I'm a sophomore at the University of
               Illinois Urbana-Champaign studying computer science. I'm
               interested in diving deeper into human-computer interaction and
-              cybersecurity and enjoy frontend web development. I'm also an
-              incoming intern at State Farm for summer 2025! This website, which
-              I built using React.js, showcases some of my experience and
+              cybersecurity and enjoy frontend web development. This website,
+              which I built using React.js, showcases some of my experience and
               technical skills. Please enjoy!
             </p>
           </section>
