@@ -396,7 +396,7 @@ function Home() {
         </div>
         <div className="rightSide">
           <a
-            href="https://drive.google.com/file/d/12ZUQdz6QBf_PZ_q7ooLCfnb2b_Q3lVZy/view"
+            href="https://drive.google.com/file/d/19fTGn8rmERYdLuNLXGkv6dWQCDC-PC48/view"
             target="_blank"
             rel="noreferrer"
             className="resume"
