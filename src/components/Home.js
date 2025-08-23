@@ -11,7 +11,16 @@ function Home() {
   const [EVCPopup, setEVCPopup] = useState(false);
   const [WCSPopup, setWCSPopup] = useState(false);
   const [ICSPopup, setICSPopup] = useState(false);
-  if (CityUPopup || EVCPopup || WCSPopup || ICSPopup) {
+  const [LASSIPopup, setLASSIPopup] = useState(false);
+  const [MotorolaPopup, setMotorolaPopup] = useState(false);
+  if (
+    CityUPopup ||
+    EVCPopup ||
+    WCSPopup ||
+    ICSPopup ||
+    MotorolaPopup ||
+    LASSIPopup
+  ) {
     document.body.classList.add("active-modal");
   } else {
     document.body.classList.remove("active-modal");
@@ -35,7 +44,6 @@ function Home() {
           </header>
         </div>
       </div>
-
       <nav className="Contacts">
         <a
           href="mailto:abigailg0314@gmail.com"
@@ -149,7 +157,6 @@ function Home() {
           </svg>
         </a>
       </nav>
-
       {/* Popups */}
       <Popup trigger={CityUPopup} setTrigger={setCityUPopup}>
         <strong style={{ fontSize: "30px" }}>
@@ -179,6 +186,7 @@ function Home() {
             alt="cityUProf"
             width="350"
             height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
           />
           <img
             className="cityUStudy"
@@ -186,6 +194,7 @@ function Home() {
             alt="cityUStudy"
             width="350"
             height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
           />
           <img
             className="cityUSymposium"
@@ -193,22 +202,22 @@ function Home() {
             alt="cityUSymposium"
             width="350"
             height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
           />
         </div>
       </Popup>
-
       <Popup trigger={EVCPopup} setTrigger={setEVCPopup}>
         <strong style={{ fontSize: "30px" }}>Illini EV Concept</strong>
         <br></br>
         <strong>September 2023-Present</strong>
         <br />
-        <i>Business Operations Lead</i>
+        <i>President</i>
         <p>
-          As the business operations team lead of Illini EV Concept, I do a lot
-          of administrative work to ensure that the club runs smoothly and gets
-          the funds it needs. My work consists of reaching out/organizing
-          meetings with sponsors, organizing and hosting events, and managing
-          the team's inventory system.
+          As the current president of Illini EV Concept, I do a lot of
+          administrative work to ensure that the club runs smoothly and gets the
+          funds it needs. My work consists of reaching out/organizing meetings
+          with sponsors, organizing and hosting events, and ensuring that our
+          team of 140+ members is successful.
           <br></br>
           I've developed a CSV-based inventory system for the team, but we are
           currently working on a more optimized server using Python to keep
@@ -217,16 +226,17 @@ function Home() {
           relevant information into an Excel file.
           <br></br>
           Through this club I've also done some web development, using WordPress
-          to design the team's current website. I'm currently working on a new
-          website for the team, which will be developed using React.js!
+          and then React to design the team's current website, which is
+          currently deployed.
         </p>
         <div className="EVCImages">
           <img
             className="EVCcar"
-            src="/images/evconceptcar.jpg"
+            src="/images/evpass.jpg"
             alt="EVCcar"
-            width="350"
+            width="390"
             height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
           />
           <img
             className="EVCleader"
@@ -234,10 +244,10 @@ function Home() {
             alt="EVCleader"
             width="350"
             height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
           />
         </div>
       </Popup>
-
       <Popup trigger={WCSPopup} setTrigger={setWCSPopup}>
         <strong style={{ fontSize: "30px" }}>Women in Computer Science</strong>
         <br></br>
@@ -270,6 +280,7 @@ function Home() {
             alt="wcsboard"
             width="350"
             height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
           />
           <img
             className="WCScookie"
@@ -277,10 +288,10 @@ function Home() {
             alt="wcscookie"
             width="170"
             height="200"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
           />
         </div>
       </Popup>
-
       <Popup trigger={ICSPopup} setTrigger={setICSPopup}>
         <strong style={{ fontSize: "30px" }}>Tech Services at Illinois</strong>
         <br></br>
@@ -305,22 +316,110 @@ function Home() {
             alt="techlab"
             width="300"
             height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
+          />
+        </div>
+      </Popup>
+      <Popup trigger={MotorolaPopup} setTrigger={setMotorolaPopup}>
+        <strong style={{ fontSize: "30px" }}>Motorola Solutions</strong>
+        <br></br>
+        <strong>May 2025-July 2025</strong>
+        <br />
+        <i>Software Engineering Intern</i>
+        <p>
+          I was a Motorola Solutions software engineering intern this past
+          summer, and my focus was on full-stack web development. I had two main
+          projects, but both were creating full-stack web applications that
+          controlled radio systems.
+          <br></br>
+          For my first project, I designed a functionally, fully-secured web app
+          that schedules automated text-to-speech checklists to Motorola radios.
+          It was designed with Angular for the frontend with a FastAPI backend
+          and a PostgreSQL database to stored created, scheduled, and cancelled
+          checklists. It was also fully secured using Angular's AuthGuard
+          feature.
+          <br></br>
+          In my second project, I worked on redesigning an Angular interface
+          from scratch for a web application that controls interoperability
+          between different radio channels. My main goal was to make this
+          interface compatible with Motorola's design system, Cobalt, and for
+          that most of the interface had to be redesigned. I also utilized
+          RESTful API calls to connect the new frontend to the existing FastAPI
+          backend.
+        </p>
+        <div className="MotorolaImages">
+          <img
+            className="MotorolaStand"
+            src="/images/motorolastand.jpg"
+            alt="motorolaStand"
+            width="350"
+            height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
+          />
+          <img
+            className="motorolaGroup"
+            src="/images/motorolagroup.JPEG"
+            alt="motorolagroup"
+            width="380"
+            height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
+          />
+        </div>
+      </Popup>
+      <Popup trigger={LASSIPopup} setTrigger={setLASSIPopup}>
+        <strong style={{ fontSize: "30px" }}>
+          Laboratory for Advanced Space Systems at Illinois (LASSI)
+        </strong>
+        <br></br>
+        <strong>January 2025-Present</strong>
+        <br />
+        <i>Research Intern</i>
+        <p>
+          As part of the LASSI team, I work on something a little different and
+          more unique compared to my other experiences. I worked on designing
+          models and simulations that predict small satellite trajectories and
+          orbits utilizing the FreeFlyer software.
+          <br></br>I also worked on the software in CubeSats, small satellies
+          used for space research, designing a headless operation that was able
+          to run different tasks upon bootup, such as valve opening/closing
+          mechanisms. I programmed the software on a Raspberry Pi using Python,
+          which will then be integrated into the CubeSat.
+          <br></br>I really enjoy working with this lab, as I've always been
+          interested in delving into space research, and this lab has given me
+          the opportunity to do so while also developing my programming skills.
+        </p>
+        <div className="LASSIImages">
+          <img
+            className="CubeSat"
+            src="/images/cubesatmodel.png"
+            alt="cubesat"
+            width="390"
+            height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
+          />
+          <img
+            className="sims"
+            src="/images/sims.png"
+            alt="sims"
+            width="380"
+            height="auto"
+            style={{ borderRadius: "10px", border: "2px solid black" }}
           />
         </div>
       </Popup>
       {/* end popups */}
-
       <body className="infoBoxes">
         <div className="leftSide">
           <section className="aboutMe">
             <h2 className="aboutmetitle">About Me</h2>
             <p className="aboutmetext">
-              Hi, I'm Abby Gillham! I'm a sophomore at the University of
-              Illinois Urbana-Champaign studying computer science. I'm
-              interested in diving deeper into human-computer interaction and
-              cybersecurity and enjoy frontend web development. This website,
-              which I built using React.js, showcases some of my experience and
-              technical skills. Please enjoy!
+              Hi, I'm Abby Gillham! I'm a junior at the University of Illinois
+              Urbana-Champaign studying computer science and minoring in
+              statistics. I have experience in full-stack development and am
+              interested in learning about all the different fields of computer
+              science, particularly machine learning and cybersecurity. This
+              website, which I built using React, showcases some of my
+              experience and technical skills. Please enjoy!
             </p>
           </section>
           <section className="Experience">
@@ -331,6 +430,23 @@ function Home() {
             </p>
             {/* buttons here! */}
             <div className="buttons">
+              <button
+                className="MotorolaButton"
+                onClick={() => setMotorolaPopup(true)}
+              >
+                <img
+                  className="MotorolaLogo"
+                  src="/images/motorola.png"
+                  alt="motorolalogo"
+                  width="300"
+                  height="300"
+                />
+                <div className="MotorolaTitle">
+                  <h1>Motorola Solutions</h1>
+                  <p>Software Engineering Intern</p>
+                </div>
+              </button>
+
               <button
                 className="cityuButton"
                 onClick={() => setCityUPopup(true)}
@@ -359,6 +475,25 @@ function Home() {
                 <div className="EVCTitle">
                   <h1>Illini EV Concept</h1>
                   <p>Business Operations Subteam Lead</p>
+                </div>
+              </button>
+
+              <button
+                className="LASSIButton"
+                onClick={() => setLASSIPopup(true)}
+              >
+                <img
+                  className="LASSILogo"
+                  src="/images/lassi.png"
+                  alt="lassilogo"
+                  width="300"
+                  height="300"
+                />
+                <div className="LASSITitle">
+                  <h1>
+                    Laboratory for Advanced Space Systems at Illinois (LASSI)
+                  </h1>
+                  <p>Undergraduate Researcher</p>
                 </div>
               </button>
 
@@ -413,8 +548,10 @@ function Home() {
                 <li>Java</li>
                 <li>C++</li>
                 <li>Python</li>
+                <li>C</li>
                 <li>HTML/CSS</li>
                 <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>Dart</li>
               </ul>
               <strong>Developer Tools</strong>
@@ -424,14 +561,16 @@ function Home() {
                 <li>Docker</li>
                 <li>Android Studio</li>
               </ul>
-              <strong>Software/Libraries/Frameworks</strong>
+              <strong>Software, Libraries, & Frameworks</strong>
               <ul>
-                <li>Excel</li>
-                <li>Power Automate</li>
-                <li>React.js</li>
+                <li>React</li>
+                <li>Angular</li>
                 <li>Flutter</li>
-                <li>Microsoft Teams</li>
-                <li>Asana</li>
+                <li>Excel</li>
+                <li>PostgreSQL</li>
+                <li>FastAPI</li>
+                <li>Scikit-Learn</li>
+                <li>Pandas</li>
               </ul>
             </p>
           </section>
@@ -449,16 +588,15 @@ function Home() {
                   <strong>CS 173</strong>: Discrete Structures
                 </li>
                 <li>
-                  <strong>CS 124</strong>: Introduction to Computer Science
-                  (Java)
+                  <strong>CS 374</strong>: Intro to Algorithms and Models of
+                  Computation
                 </li>
                 <li>
                   <strong>CS 128</strong>: Introduction to Computer Science II
                   (C++)
                 </li>
                 <li>
-                  <strong>Math 241</strong>: Calculus III (Multivariable
-                  Calculus)
+                  <strong>Math 357</strong>: Numerical Methods
                 </li>
                 <li>
                   <strong>Math 257</strong>: Linear Algebra (with applied
