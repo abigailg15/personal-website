@@ -1,29 +1,43 @@
-import React from 'react';
-import './Components.css';
-import { useState } from 'react';
+import React from "react";
+import "./Components.css";
+import { inView } from "./Home.js";
+import { useState } from "react";
 
-function Navbar() {
-   const [Navbar, setNavbar] = useState(false);
+function Navbar({ inView }) {
+  const [Navbar, setNavbar] = useState(false);
 
-   const makeVisible = () => {
-        if(window.scrollY >= 300) {
-            setNavbar(true);
-        } else {
-            setNavbar(false);
-        }
-   }
-   window.addEventListener('scroll', makeVisible)
-    return(
+  const makeVisible = () => {
+    if (!inView) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", makeVisible);
+  return (
     <div>
-    <nav className = {Navbar ? "Navbar active" : "Navbar"}>
-            <a href = "mailto:abigailg0314@gmail.com" target="_blank" rel="noreferrer">
-            <svg className = "emaill" version="1.0" xmlns="http://www.w3.org/2000/svg"
-            width="35px" height="35px" viewBox="0 0 512.000000 512.000000"
-            preserveAspectRatio="xMidYMid meet">
-
-            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-            fill="black" stroke="none">
-            <path d="M2315 5109 c-800 -83 -1501 -518 -1927 -1196 -487 -774 -516 -1777
+      <nav className={Navbar ? "Navbar active" : "Navbar"}>
+        <a
+          href="mailto:abigailg0314@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <svg
+            className="emaill"
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="35px"
+            height="35px"
+            viewBox="0 0 512.000000 512.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+              fill="black"
+              stroke="none"
+            >
+              <path
+                d="M2315 5109 c-800 -83 -1501 -518 -1927 -1196 -487 -774 -516 -1777
             -75 -2578 200 -364 487 -676 841 -913 238 -159 600 -311 876 -366 214 -43 295
             -51 530 -51 236 0 333 10 532 51 880 184 1615 842 1898 1702 92 278 125 491
             125 802 0 301 -32 513 -116 775 -124 390 -330 728 -622 1024 -399 404 -893
@@ -32,18 +46,32 @@ function Navbar() {
             1106 1 1478 -2 1498 -11z m-2321 -828 c389 -333 719 -613 732 -623 29 -22 89
             -32 137 -23 26 5 208 155 793 656 l759 650 3 -833 c1 -457 0 -846 -3 -864 -7
             -41 -50 -92 -92 -109 -27 -12 -284 -14 -1503 -14 -1625 0 -1512 -5 -1566 66
-            l-29 37 -3 860 -2 859 32 -28 c18 -16 352 -301 742 -634z"/>
+            l-29 37 -3 860 -2 859 32 -28 c18 -16 352 -301 742 -634z"
+              />
             </g>
-            </svg>
-            </a>
-            <a href = "https://www.linkedin.com/in/abigail-gillham/" target="_blank" rel="noreferrer">
-                <svg className = "linkedin" version="1.0" xmlns="http://www.w3.org/2000/svg"
-                    width="35px" height="35px" viewBox="0 0 448.000000 448.000000"
-                    preserveAspectRatio="xMidYMid meet">
-
-                    <g transform="translate(0.000000,448.000000) scale(0.100000,-0.100000)"
-                    fill="#000000" stroke="none">
-                    <path d="M1990 4469 c-738 -83 -1405 -541 -1737 -1194 -174 -342 -253 -664
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/abigail-gillham/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <svg
+            className="linkedin"
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="35px"
+            height="35px"
+            viewBox="0 0 448.000000 448.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(0.000000,448.000000) scale(0.100000,-0.100000)"
+              fill="#000000"
+              stroke="none"
+            >
+              <path
+                d="M1990 4469 c-738 -83 -1405 -541 -1737 -1194 -174 -342 -253 -664
                     -253 -1032 0 -355 72 -665 230 -990 260 -534 729 -944 1299 -1133 561 -187
                     1145 -151 1676 104 466 224 814 569 1040 1031 112 228 173 423 212 675 24 158
                     24 472 0 628 -61 389 -216 757 -445 1052 -378 486 -930 793 -1547 860 -106 12
@@ -54,18 +82,32 @@ function Navbar() {
                     518 -38 116 -116 176 -230 177 -111 1 -193 -51 -249 -156 -23 -41 -23 -48 -28
                     -522 l-5 -480 -252 -3 -253 -2 0 765 0 765 255 0 255 0 0 -102 0 -101 28 39
                     c74 101 197 176 322 197 57 10 179 6 243 -8z m-1383 -790 l0 -765 -255 0 -255
-                    0 0 765 0 765 255 0 255 0 0 -765z"/>
-                    </g>
-                </svg>
-                </a>
-                <a href = "https://github.com/abigailg15" target = "_blank" rel = "noreferrer">
-                <svg className = "github" version="1.0" xmlns="http://www.w3.org/2000/svg"
-                width="35px" height="35px" viewBox="0 0 512.000000 512.000000"
-                preserveAspectRatio="xMidYMid meet">
-
-                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none">
-                <path d="M2360 5049 c-154 -11 -357 -47 -516 -93 -902 -259 -1603 -1017 -1790
+                    0 0 765 0 765 255 0 255 0 0 -765z"
+              />
+            </g>
+          </svg>
+        </a>
+        <a
+          href="https://github.com/abigailg15"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <svg
+            className="github"
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="35px"
+            height="35px"
+            viewBox="0 0 512.000000 512.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+              fill="#000000"
+              stroke="none"
+            >
+              <path
+                d="M2360 5049 c-154 -11 -357 -47 -516 -93 -902 -259 -1603 -1017 -1790
                 -1934 -136 -669 -8 -1355 354 -1908 255 -390 580 -686 968 -886 141 -73 341
                 -154 403 -164 58 -9 109 19 133 73 18 40 18 60 12 286 l-7 243 -86 -14 c-97
                 -15 -256 -9 -386 13 -105 19 -211 71 -278 139 -53 53 -67 76 -136 229 -63 139
@@ -81,13 +123,14 @@ function Navbar() {
                 -165 -217 -464 -366 -843 -418 l-87 -12 39 -49 c47 -60 85 -137 106 -221 14
                 -52 17 -137 20 -503 5 -490 5 -489 72 -521 46 -21 83 -15 229 42 738 284 1320
                 932 1533 1703 141 513 111 1108 -80 1601 -172 440 -475 842 -848 1122 -405
-                303 -865 474 -1367 507 -175 12 -192 12 -375 0z"/>
-                </g>
-                </svg>
-                </a>
-        </nav>
+                303 -865 474 -1367 507 -175 12 -192 12 -375 0z"
+              />
+            </g>
+          </svg>
+        </a>
+      </nav>
     </div>
-    );
+  );
 }
 
 export default Navbar;

@@ -5,8 +5,12 @@ import "./Experience.css";
 import Navbar from "./Navbar";
 import Popup from "./Popup";
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 function Home() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
   const [CityUPopup, setCityUPopup] = useState(false);
   const [EVCPopup, setEVCPopup] = useState(false);
   const [WCSPopup, setWCSPopup] = useState(false);
@@ -28,7 +32,7 @@ function Home() {
 
   return (
     <div className="Main">
-      <Navbar />
+      <Navbar inView={inView} />
       <div className="Top_Title">
         <img
           className="myProfile"
@@ -44,7 +48,7 @@ function Home() {
           </header>
         </div>
       </div>
-      <nav className="Contacts">
+      <nav className="Contacts" ref={ref}>
         <a
           href="mailto:abigailg0314@gmail.com"
           target="_blank"
@@ -585,18 +589,17 @@ function Home() {
                   <strong>CS 233</strong>: Computer Architecture (Verilog, MIPS)
                 </li>
                 <li>
-                  <strong>CS 173</strong>: Discrete Structures
+                  <strong>CS 341</strong>: Systems Programming (C)
                 </li>
                 <li>
                   <strong>CS 374</strong>: Intro to Algorithms and Models of
                   Computation
                 </li>
                 <li>
-                  <strong>CS 128</strong>: Introduction to Computer Science II
-                  (C++)
+                  <strong>CS 411</strong>: Databases (SQL, Neo4J, MongoDB)
                 </li>
                 <li>
-                  <strong>Math 357</strong>: Numerical Methods
+                  <strong>CS 357</strong>: Numerical Methods (Python)
                 </li>
                 <li>
                   <strong>Math 257</strong>: Linear Algebra (with applied
@@ -611,5 +614,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;
