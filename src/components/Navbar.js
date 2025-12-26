@@ -1,6 +1,6 @@
 import React from "react";
 import "./Components.css";
-import { inView } from "./Home.js";
+// import { inView } from "./Home.js";
 import { useState } from "react";
 
 function Navbar({ inView }) {
